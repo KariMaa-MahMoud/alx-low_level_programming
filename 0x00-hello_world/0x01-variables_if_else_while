@@ -1,0 +1,17 @@
+#!/bin/bash
+echo "input file name"
+read filename
+echo "#include <stdio.h>
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)" > ${filename}
+
+
+echo "input ur answer"
+read uranswer
+echo "${uranswer}" >> ${filename}
+chmod u+x ${filename}
